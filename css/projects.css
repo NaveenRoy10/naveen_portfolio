@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: #0f172a;
+}
+
+nav{
+    background-color: #1e293b;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    font-size: 22px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+ nav h1{
+    font-size: 30px;
+} 
+
+nav a{
+    color: #f8fafc;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}

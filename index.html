@@ -10,10 +10,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+
+    <link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+>
   </head>
 
   <body>
-    <header>
+    <header id="top">
       <nav>
         <h1><a href="#home">NR.</a></h1>
         <ul>
@@ -111,7 +116,9 @@
         <div class="projects-container">
           <article class="project-card">
             <a href="projects.html#coral">
-              <div class="project-image"></div>
+              <div class="project-image">
+                <img src="assets/projects/coral-health-monitoring.svg" alt="Coral Health Monitoring">
+              </div>
 
               <h3 class="project-title">Coral Health Monitoring System</h3>
 
@@ -135,7 +142,9 @@
 
           <article class="project-card">
             <a href="projects.html#ecommerce">
-              <div class="project-image"></div>
+              <div class="project-image">
+                <img src="assets/projects/ecommerce-website.svg" alt="E-Commerce Website">
+              </div>
 
               <h3 class="project-title">E-Commerce Website</h3>
 
@@ -155,7 +164,9 @@
 
           <article class="project-card">
             <a href="projects.html#library">
-              <div class="project-image"></div>
+              <div class="project-image">
+                <img src="assets/projects/library-management-system.svg" alt="Library Management System">
+              </div>
 
               <h3 class="project-title">Library Management System</h3>
 
@@ -174,7 +185,18 @@
         </div>
       </section>
 
-      <section id="contact">
+      <section>
+        <div id="arrow">
+          <a href="#top" aria-label="back-to-top">
+            <i class="fa-solid fa-arrow-up"></i> 
+          </a>
+        </div>
+      </section>
+     
+    </main>
+
+    <footer>
+       <section id="contact">
         <h2>Connect with me</h2>
         <p>
           Let's build something meaningful together. Whether it's an
@@ -204,10 +226,6 @@
           </a>
         </div>
       </section>
-    </main>
-
-    <footer>
-      
     </footer>
 
     <script src="js/script.js"></script>
