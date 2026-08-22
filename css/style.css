@@ -1,3 +1,6 @@
+
+/* HOME */
+
 *{
     margin: 0;
     padding: 0;
@@ -70,6 +73,9 @@ nav a{
     max-width: 700px;
 }
 
+
+/* ABOUT */
+
 #about{
     padding: 100px 60px;
     min-height: calc(100vh - 90px);
@@ -86,7 +92,6 @@ nav a{
     max-width: 800px;
     line-height: 1.6;
     font-size: large;
-    min-height: calc(100vh - 90px);
 }
 
 .first-intro{
@@ -137,4 +142,102 @@ nav a{
 
 #about button:hover {
     color: #0f172a;
+}
+
+.tech-skills{
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.dev-tools{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.skills-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.tools-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.skill{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid #a855f7;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(168, 85, 247, 0.3);
+}
+
+.tool{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid #a855f7;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(168, 85, 247, 0.3);
+}
+
+
+
+/* PROJECTS */
+
+
+#projects h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+#projects a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* CONTACT */
+
+#contact h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#contact a{
+    text-decoration: none;
+    color: inherit;
 }
