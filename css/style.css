@@ -43,6 +43,18 @@ nav a{
     
 }
 
+#role{
+    border-right: 4px solid #f8fafc;
+    padding-right: 3px ;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
 .greetings{
     margin-bottom: 20px;
     margin-top: 40px;

@@ -82,6 +82,11 @@ nav a{
 
         /* MAIN */
 
+
+.project-section{
+    display: none;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -195,6 +200,7 @@ a{
    align-items: center;
 }
 
+        /* FOOTER */
 
 footer{
     background-color: #1e293b;
