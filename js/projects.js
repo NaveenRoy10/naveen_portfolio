@@ -1,18 +1,47 @@
 const projectLinks = document.querySelectorAll(".project-hero a");
-const projectSection = document.querySelectorAll(".project-section");
+const projectSections = document.querySelectorAll(".project-section");
 
-projectLinks.forEach(link=>{
-    link.addEventListener("click",function(event){
+function showSection(sectionId) {
+    projectSections.forEach(section => {
+        section.style.display = "none";
+    });
+
+    const section = document.querySelector(sectionId);
+
+    if (section) {
+        section.style.display = "block";
+    }
+}
+
+projectLinks.forEach(link => {
+    link.addEventListener("click", function (event) {
         event.preventDefault();
 
-        projectSection.forEach(section=>{
-            section.style.display = "none";
-        });
+        const target = this.getAttribute("href");
 
-        const target = document.querySelector(this.getAttribute("href"));
-        target.style.display = "block"
+        if (target === "#web-development") {
+            showSection("#web-development");
+        } 
+        else if (target === "#python-development") {
+            showSection("#python-development");
+        } 
+        else if (target === "#wordpress") {
+            showSection("#wordpress");
+        }
     });
 });
 
-const firstSection = document.querySelector("#web-development");
-firstSection.style.display = "block";
+const hash = window.location.hash;
+
+if (hash === "#ecommerce") {
+    showSection("#web-development");
+} 
+else if (hash === "#coral" || hash === "#library") {
+    showSection("#python-development");
+} 
+else if (hash === "#wordpress") {
+    showSection("#wordpress");
+} 
+else {
+    showSection("#web-development");
+}
